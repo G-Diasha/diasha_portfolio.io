@@ -1,0 +1,154 @@
+/* -----------------------------
+   Color Theme
+------------------------------ */
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --text: #1f2937;
+}
+
+/* -----------------------------
+   Global Styles
+------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(180deg, var(--light), #ffffff);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   Header / Hero
+------------------------------ */
+.hero {
+  background: linear-gradient(135deg, var(--dark), var(--primary));
+  color: white;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: white;
+  color: var(--primary);
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* -----------------------------
+   Sections
+------------------------------ */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+/* -----------------------------
+   Projects
+------------------------------ */
+.project {
+  background: #f9fafb;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Links */
+.link {
+  margin-right: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   Skills
+------------------------------ */
+.skills {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.skills li {
+  background: #e0e7ff;
+  padding: 0.6rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* -----------------------------
+   Footer
+------------------------------ */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--dark);
+  color: white;
+  margin-top: 4rem;
+}
+
+/* -----------------------------
+   Responsive
+------------------------------ */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  section {
+    margin: 2rem 1rem;
+  }
+}
